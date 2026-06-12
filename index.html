@@ -1,126 +1,57 @@
-/* Configurações Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPainel 2026 - Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background-color: #f4f7f5;
-    color: #333;
-}
+    <nav class="navbar">
+        <div class="logo">🌱 AgroTech 2026</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Painel</a></li>
+            <li><a href="#">Culturas</a></li>
+            <li><a href="#">Dicas do Agrinho</a></li>
+        </ul>
+    </nav>
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2e7d32; /* Verde Agro */
-    padding: 1rem 2rem;
-    color: white;
-}
+    <main class="container">
+        <header class="welcome">
+            <h1>Olá, Produtor!</h1>
+            <p>Aqui está o status da sua propriedade hoje.</p>
+        </header>
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        <section class="dashboard-grid">
+            <div class="card status-ok">
+                <h3>Umidade do Solo</h3>
+                <p class="number">65%</p>
+                <span>Ideal para o plantio</span>
+            </div>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+            <div class="card status-warning">
+                <h3>Temperatura</h3>
+                <p class="number">31°C</p>
+                <span>Alerta de calor extremo à tarde</span>
+            </div>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.3s;
-}
+            <div class="card status-info">
+                <h3>Próxima Colheita</h3>
+                <p class="number">12 Dias</p>
+                <span>Milho Verde</span>
+            </div>
+        </section>
 
-.nav-links a:hover, .nav-links a.active {
-    opacity: 0.8;
-    border-bottom: 2px solid #81c784;
-}
+        <section class="info-section">
+            <h2>Dica Sustentável do Dia</h2>
+            <p>A rotação de culturas com leguminosas ajuda a fixar nitrogênio no solo naturalmente, reduzindo a necessidade de fertilizantes químicos e economizando recursos!</p>
+        </section>
+    </main>
 
-/* Conteúdo */
-.container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
+    <footer>
+        <p>© 2026 Projeto Agrinho - Desenvolvido com foco no Futuro do Campo</p>
+    </footer>
 
-.welcome {
-    margin-bottom: 2rem;
-}
-
-.welcome h1 {
-    color: #1b5e20;
-}
-
-/* Grid do Painel */
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 2rem;
-}
-
-.card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-left: 5px solid #ccc;
-}
-
-.card h3 {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.card .number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 0.5rem;
-}
-
-.card span {
-    font-size: 0.85rem;
-}
-
-/* Cores dos Status */
-.status-ok { border-left-color: #4caf50; }
-.status-ok span { color: #2e7d32; }
-
-.status-warning { border-left-color: #ff9800; }
-.status-warning span { color: #e65100; }
-
-.status-info { border-left-color: #2196f3; }
-.status-info span { color: #0d47a1; }
-
-/* Seção Informativa */
-.info-section {
-    background-color: #e8f5e9;
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid #c8e6c9;
-}
-
-.info-section h2 {
-    color: #2e7d32;
-    margin-bottom: 0.5rem;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #333;
-    color: white;
-    font-size: 0.9rem;
-    margin-top: 4rem;
-}
+</body>
+</html>
